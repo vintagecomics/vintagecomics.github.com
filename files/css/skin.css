@@ -521,6 +521,21 @@ blockquote + figcaption:before {
 	font-family: Verdana, Arial, Helvetica, Sans-serif;
 }
 
+.breadcrumbs {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: Verdana, Arial, Helvetica, Sans-serif;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: #555;
+}
+
+.breadcrumbs a:hover {
+  color: #333;
+}
+
 article header {
 	text-align: center;
 }
