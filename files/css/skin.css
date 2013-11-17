@@ -382,6 +382,16 @@ blockquote + figcaption:before {
 	font-size: 13px;
 }
 
+#footer-nav ul {
+  margin: 0;
+}
+
+#footer-nav li {
+  display: inline;
+  margin-right: 12px;
+  margin-right: 1.2rem;
+}
+
 /* Utilities */
 
 .aligncenter {
@@ -524,6 +534,10 @@ article header {
 
 .page .page-wrap {
 	position: relative;
+}
+
+.page figure {
+  margin: 0;
 }
 
 .pagination {
