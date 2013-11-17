@@ -454,6 +454,10 @@ blockquote + figcaption:before {
 	color: #666;
 }
 
+.intro a {
+  text-decoration: none;
+}
+
 .widget {
 	margin-bottom: 30px;
 	margin-bottom: 3rem;
