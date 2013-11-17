@@ -43,7 +43,7 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
-    color: #0e76a8;
+    color: #cc0000;
 }
 
 a:hover {
@@ -390,6 +390,15 @@ blockquote + figcaption:before {
   display: inline;
   margin-right: 12px;
   margin-right: 1.2rem;
+}
+
+#footer-nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+#footer-nav a:hover {
+  color: #444;
 }
 
 /* Utilities */
