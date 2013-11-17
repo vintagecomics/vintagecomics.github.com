@@ -569,7 +569,8 @@ article header {
 }
 
 .page figure {
-  margin: 0;
+  margin: 0 0 10px;
+  margin: 0 0 1rem;
 }
 
 .pagination {
