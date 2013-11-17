@@ -537,6 +537,7 @@ blockquote + figcaption:before {
 
 .breadcrumbs a:hover {
   color: #333;
+  text-decoration: underline;
 }
 
 article header {
