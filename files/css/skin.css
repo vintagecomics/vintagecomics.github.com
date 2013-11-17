@@ -526,10 +526,13 @@ blockquote + figcaption:before {
   font-size: 1.2rem;
   font-family: Verdana, Arial, Helvetica, Sans-serif;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .breadcrumbs a {
   color: #555;
+  text-decoration: none;
 }
 
 .breadcrumbs a:hover {
