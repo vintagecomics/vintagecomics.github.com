@@ -618,3 +618,9 @@ article header {
 .share-buttons li.addthis {
 	width: 50px;
 }
+
+.social .fb-like-box, .social .g-person {
+  float: left;
+  margin-right: 25px;
+  margin-right: 2.5rem;
+}
