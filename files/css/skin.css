@@ -619,8 +619,13 @@ article header {
 	width: 50px;
 }
 
-.social .fb-like-box, .social .g-person {
+.social .fblb, .social .g-person {
   float: left;
   margin-right: 25px;
   margin-right: 2.5rem;
+}
+
+.fblb {
+  text-align: center;
+  border: 1px solid #ccc;
 }
