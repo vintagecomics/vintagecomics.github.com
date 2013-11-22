@@ -619,6 +619,12 @@ article header {
 	width: 50px;
 }
 
+.social {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .social .fblb, .social .g-person {
   float: left;
   margin-right: 25px;
