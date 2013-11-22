@@ -620,7 +620,7 @@ article header {
 }
 
 .social {
-  width: 552px;
+  width: 550px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -629,6 +629,10 @@ article header {
   float: left;
   margin-right: 25px;
   margin-right: 2.5rem;
+}
+
+.social .g-person {
+  margin-right: 0;
 }
 
 .fblb {
