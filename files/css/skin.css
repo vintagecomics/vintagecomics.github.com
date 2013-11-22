@@ -625,13 +625,13 @@ article header {
   margin-right: auto;
 }
 
-.social .fblb, .social .g-person {
+.social .fblb, .social .gpls {
   float: left;
   margin-right: 25px;
   margin-right: 2.5rem;
 }
 
-.social .g-person {
+.social .gpls {
   margin-right: 0;
 }
 
