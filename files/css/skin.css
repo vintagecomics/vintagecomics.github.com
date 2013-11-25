@@ -642,3 +642,5 @@ article header {
   text-align: center;
   border: 1px solid #ccc;
 }
+
+.cycle-slideshow img { background: transparent url('../images/loading.gif') 50% 50% no-repeat; }
