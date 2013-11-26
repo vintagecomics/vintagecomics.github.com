@@ -577,6 +577,8 @@ article header {
 	font-family: Verdana, Arial, Helvetica, Sans-serif;
 	color: #888;
 	font-size: 11px;
+  margin-bottom: 5px;
+  margin-bottom: .5rem;
 }
 
 .pagination a {
