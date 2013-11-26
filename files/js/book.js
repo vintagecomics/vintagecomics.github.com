@@ -46,7 +46,9 @@ var slideshow = {
       newIndex = (that.currentIndex) ? that.currentIndex-1 : that.imgs.length-1;
       that.changeImg(newIndex, counter);
     });
-      
+    
+    var sep = document.createElement('span');
+    sep.textContent = ' / ';
     var next = document.createElement('a');
     next.textContent = 'Next »';
     next.className = 'next';
@@ -56,6 +58,7 @@ var slideshow = {
     });
       
     controls.appendChild(prev);
+    controls.appendChild(sep);
     controls.appendChild(next);
     controls.appendChild(counter);
       
