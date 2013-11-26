@@ -40,7 +40,7 @@ var slideshow = {
     this.setCounter(counter);
     
     var prev = document.createElement('a');
-    prev.textContent = '&#171; Previous';
+    prev.textContent = '« Previous';
     prev.className = 'prev';
     prev.addEventListener('click', function() {
       newIndex = (that.currentIndex) ? that.currentIndex-1 : that.imgs.length-1;
@@ -48,7 +48,7 @@ var slideshow = {
     });
       
     var next = document.createElement('a');
-    next.textContent = 'Next &#187;';
+    next.textContent = 'Next »';
     next.className = 'next';
     next.addEventListener('click', function() {
       newIndex = (that.currentIndex !== that.imgs.length-1) ? that.currentIndex+1 : 0;
