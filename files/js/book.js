@@ -10,10 +10,11 @@ var slideshow = {
       
     //add the html to the element from the options
     var frag = document.createDocumentFragment();
+    var pagination = document.getElementById('pagination');
     this.imgs.forEach(function(img) {
       frag.appendChild(img);
     });
-    frag.appendChild(controls);
+    pagination.appendChild(controls);
     options.element.appendChild(frag);
   },
   getImgs: function(sources) {
@@ -31,8 +32,7 @@ var slideshow = {
   },
   getControls: function() {
     var that = this; //so that we can access "this" within the click functions
-    var pagination = document.getElementById('pagination');
-    var controls = pagination.createElement('div');
+    var controls = document.createElement('div');
     controls.className = 'controls';
       
     var counter = document.createElement('span');
@@ -40,7 +40,7 @@ var slideshow = {
     this.setCounter(counter);
     
     var prev = document.createElement('a');
-    prev.textContent = 'Prev';
+    prev.textContent = 'Previous';
     prev.className = 'prev';
     prev.addEventListener('click', function() {
       newIndex = (that.currentIndex) ? that.currentIndex-1 : that.imgs.length-1;
