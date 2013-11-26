@@ -581,8 +581,13 @@ article header {
 
 .pagination a {
 	font-size: 13px;
+  cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.pagination .counter {
+  display: block;
 }
 
 .share-buttons {
