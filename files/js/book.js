@@ -31,8 +31,8 @@ var slideshow = {
   },
   getControls: function() {
     var that = this; //so that we can access "this" within the click functions
-    
-    var controls = document.createElement('div');
+    var pagination = document.getElementById('pagination');
+    var controls = pagination.createElement('div');
     controls.className = 'controls';
       
     var counter = document.createElement('span');
