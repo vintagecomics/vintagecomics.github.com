@@ -651,3 +651,21 @@ article header {
 }
 
 .cycle-slideshow img { background: transparent url('../images/loading.gif') 50% 50% no-repeat; }
+
+#disqus-tab, #fb-comments-tab, #gplus-comments-tab {
+	width: 30%;
+	padding: 1.25%;
+	margin: 0 .125%;
+	float: left;
+	background: #eee;
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+	text-align: center;
+}
+#disqus-tab {position: relative;}
+#disqus-loader { position: absolute; width: 100%; height: 100%; top: 0; left: 0;color: transparent;}
+.comments-loader {
+	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
+}
