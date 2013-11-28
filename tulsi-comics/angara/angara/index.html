@@ -89,6 +89,17 @@
 					<li class="pinit hideonzoom800"><a href="//www.pinterest.com/pin/create/button/?url=http://vintagecomics.in/tulsi-comics/angara/angara/&media=https://lh4.googleusercontent.com/-iAsvTXuAibg/UpXPFtOkZfI/AAAAAAAAAOs/XBduUpbwLT0/s0/angara-1.jpg&description=Angara" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a></li>
                   <li class="addthis"><a class="sprite icon addthis" href="http://www.addthis.com/bookmark.php?pub=vintagecomics.in&url=http://vintagecomics.in/tulsi-comics/angara/angara/" target="_blank" rel="nofollow"><img src="../../../files/images/share.png" /></a></li>
 				</ul>
+              <section class="widget comments">
+<div class="comments-loader">
+	<div id="disqus-tab" onclick="show_disqus_comments(); hide_fb_comments(); hide_gplus_comments(); ">Disqus<div id="disqus-loader" onclick="load_disqus()">&nbsp;</div></div>
+	<div id="fb-comments-tab" onclick="show_fb_comments(); hide_disqus_comments(); hide_gplus_comments(); ">Facebook</div>
+	<div id="gplus-comments-tab" onclick="show_gplus_comments(); hide_fb_comments(); hide_disqus_comments(); ">Google+</div>
+	<div style="clear:both;"></div>
+</div>
+<div id="disqus_thread"></div>
+<div class="fb-comments" id="fb-comments" data-href="http://example.com/comments" data-numposts="5" data-colorscheme="light"></div>
+<div id="gplus-comments" data-href="http://vintagecomics.in/" data-width="650" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>
+              </section>
 			</main>
 			<footer id="footer">
 				<nav id="footer-nav">
@@ -102,7 +113,7 @@
 			</footer>
 		</div>
 		<script>
-function initialize(){setTimeout('loadScripts()',1000);}function script(url){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url;var x=document.getElementsByTagName('head')[0];x.appendChild(s);}function loadScripts(){script('//connect.facebook.net/en_US/all.js#xfbml=1');script('https://apis.google.com/js/plusone.js');script('//platform.twitter.com/widgets.js');script('//assets.pinterest.com/js/pinit.js');}window.onload=initialize();function load_disqus(){var disqus_shortname='';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='http://'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();document.getElementById('comment-loader').style.display='none';}
+function initialize(){setTimeout('loadScripts()',1000);}function script(url){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=url;var x=document.getElementsByTagName('head')[0];x.appendChild(s);}function loadScripts(){script('//connect.facebook.net/en_US/all.js#xfbml=1&appId=373269109483789');script('https://apis.google.com/js/plusone.js');script('//platform.twitter.com/widgets.js');script('//assets.pinterest.com/js/pinit.js');}window.onload=initialize();
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -152,6 +163,37 @@ window.onload = function() {
   });
   
 };
+        
+
+function load_disqus(){var disqus_shortname='vintagecomics';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='http://'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();document.getElementById('disqus-loader').style.display='none';}
+
+function show_fb_comments() {
+	document.getElementById('fb-comments').style.display = 'block';
+	document.getElementById('fb-comments-tab').style.background = '#ddd';
+}
+function hide_fb_comments() {
+	document.getElementById('fb-comments').style.display = 'none';	
+	document.getElementById('fb-comments-tab').style.background = '#eee';
+}
+function show_disqus_comments() {
+	document.getElementById('disqus_thread').style.display = 'block';
+	document.getElementById('disqus-tab').style.background = '#ddd';
+}
+function hide_disqus_comments() {
+	document.getElementById('disqus_thread').style.display = 'none';	
+	document.getElementById('disqus-tab').style.background = '#eee';
+}
+function show_gplus_comments() {
+	document.getElementById('gplus-comments').style.display = 'block';
+	document.getElementById('gplus-comments-tab').style.background = '#ddd';
+}
+function hide_gplus_comments() {
+	document.getElementById('gplus-comments').style.display = 'none';	
+	document.getElementById('gplus-comments-tab').style.background = '#eee';
+}
+hide_disqus_comments(); hide_fb_comments(); hide_gplus_comments();
+</script>
+<div id="fb-root"></div>
 		</script>
 	</body>
 </html>
