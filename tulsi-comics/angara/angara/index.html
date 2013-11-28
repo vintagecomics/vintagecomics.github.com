@@ -98,7 +98,7 @@
 </div>
 <div id="disqus_thread"></div>
 <div class="fb-comments" id="fb-comments" data-href="http://vintagecomics.in/tulsi-comics/angara/angara/" data-numposts="5" data-colorscheme="light" data-width="800"></div>
-<div id="gplus-comments" data-href="http://vintagecomics.in/tulsi-comics/angara/angara/" data-width="650" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>
+<div id="gplus-comments"></div>
               </section>
 			</main>
 			<footer id="footer">
@@ -192,8 +192,22 @@ function hide_gplus_comments() {
 	document.getElementById('gplus-comments-tab').style.background = '#eee';
 }
 hide_disqus_comments(); hide_fb_comments(); hide_gplus_comments();
+window.setTimeout(function() {
+    var id = 'gplus-comments';
+    var divWidth = document.getElementById(id).offsetWidth;
+    var width = !!divWidth ? Math.min(divWidth, 750) : 600;
+    var url = "http://vintagecomics.in/tulsi-comics/angara/angara/";
+    var moderationUrl = "";
+    var moderationMode = "FILTERED_POSTMOD";
+    gapi.comments.render(id, {
+        'href': url,
+        'first_party_property': 'BLOGGER',
+        'legacy_comment_moderation_url': moderationUrl,
+        'view_type': moderationMode,
+        'width': width
+    });
+  }, 10);
 </script>
 <div id="fb-root"></div>
-		</script>
 	</body>
 </html>
